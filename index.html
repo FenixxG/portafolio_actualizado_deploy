@@ -4,15 +4,68 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portafolio con Vite</title>
   <link rel="stylesheet" href="less/style.less">
-  <title>Vite App</title>
+  <link rel="shortcut icon" href="./Imagenes/favicon.ico" type="image/x-icon">
+  <script src="https://kit.fontawesome.com/d095bcb77b.js" crossorigin="anonymous"></script>
 </head>
-
 <body>
-  <h1>Portafolio Cristian Miranda</h1>
-  <div class="demo-pages">
-    Hola Mundo
-  </div>
-</body>
+  <header>
+    <a href="#">
+      <h1>Cristian<span class="cambioColor">.</span></h1>
+    </a>
+    <nav>
+      <ul>
+        <li>
+          <a href="#inicio">Inicio</a>
+        </li>
+        <li>
+          <a href="#acerca">Acerca de</a>
+        </li>
+        <li>
+          <a href="#contacto">Contacto</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <!--SECCION DE PRESENTACION-->
+    <section class="inicio" id="inicio">
+      <div class="presentacion">
+        <h2>Hola, soy <span class="cambioColor">Cristian Miranda</span></h2>
+        <p>Estudiante de ingeniería en ciencias de la computación</p>
+      </div>
+      <img src="./Imagenes/fotoperfil.jpg" alt="Foto de perfil" width="320" height="320">
+    </section>
 
+    <!--SECCION ACERCA DE-->
+    <section class="acercade" id="acerca">
+      <div class="sobremi">
+        <h2>Sobre mí<span class="cambioColor">.</span></h2>
+        <p>Hola! Mi nombre es Cristian Miranda, resido en la ciudad de Siguatepeque, Comayagua y actualmente soy
+          estudiante de ingeniería en ciencias de la computación en la Universidad Católica de Honduras, me llama mucho
+          la atención el desarrollo de portales web en especial la creación de interfaces web, poseo conocimientos en
+          HTML y CSS, lo que es JavaScript manejo lo basico. Siempre busco expandir mis conocimientos en nuevas
+          tecnologias y herramientas.</p>
+      </div>
+    </section>
+
+    <!--SECCION DE CONTACTO-->
+    <section class="contacto" id="contacto">
+      <div class="contacto-info">
+        <h2>Contacto<span class="cambioColor">.</span></h2>
+        <p>Puedes contactarme a través de los siguientes medios:</p>
+        <p><i class="fa-regular fa-envelope" style="color: #00b5e8;"></i> cramirandav@gmail.com</p>
+        <p><i class="fa-solid fa-phone" style="color: #00b5e8;"></i> +504 8809-6123</p>
+        <a href="https://github.com/FenixxG" target="_blank"><i class="fa-brands fa-github"
+            style="color: #00b5e8;"></i></a>
+        <a href="https://www.linkedin.com/in/cristian-armando-miranda-villatoro-2b7756275/" target="_blank"><i
+            class="fa-brands fa-linkedin" style="color: #00b5e8;"></i></a>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <small>Copyright © 2023 - Todos los Derechos Reservados</small>
+  </footer>
+</body>
 </html>

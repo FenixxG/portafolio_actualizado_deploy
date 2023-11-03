@@ -1,0 +1,40 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: @primary-bg-color;
+    .no-padding-margin();
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    border-bottom: 1px solid @secondary-text-color;
+
+    h1 {
+        font-size: 1.5rem;
+        color: @primary-text-color;
+        font-weight: 800;
+        padding: 0.2rem 20rem;
+    }
+
+    nav {
+        margin-right: 15rem;
+
+        ul {
+            list-style: none;
+            display: flex;
+            .no-padding-margin();
+
+            li {
+                display: inline-block;
+
+                a {
+                    padding: 0.5rem 1rem;
+                    color: @primary-text-color;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}

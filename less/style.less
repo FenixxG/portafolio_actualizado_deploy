@@ -1,25 +1,34 @@
-@primary-bg-color: #000;
-@primary-tx-color: #fff;
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@400;500;600;700;800&display=swap');
+
+@import "helpers.less";
+@import "header.less";
+@import "landing.less";
+@import "acerca.less";
+@import "contacto.less";
+@import "footer.less";
+
+@primary-bg-color: #030d24;
+@secondary-bg-color: #001938;
+@primary-text-color: #fff;
+@secondary-text-color: #00b5e8;
 
 * {
     box-sizing: border-box;
-}
-
-.center-on-page {
-    display: flex;
-    width: 100vh;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
+    .no-padding-margin();
     background-color: @primary-bg-color;
-    color: @primary-tx-color;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.5rem;
+    color: @primary-text-color;
 }
 
-.demo-pages {
-    .center-on-page();
+section {
+    display: flex;
+}
+
+.cambioColor {
+    color: @secondary-text-color;
 }
