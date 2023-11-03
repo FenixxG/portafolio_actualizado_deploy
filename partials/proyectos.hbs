@@ -1,0 +1,22 @@
+<section class="proyectos" id="proyectos">
+    <div class="titulo">
+        <h2>Proyectos<span class="cambioColor">.</span></h2>
+    </div>
+
+    <div class="card-container">
+        {{#each proyectos}}
+        <div class="card">
+            <div class="card-imagen">
+                <img src="{{imagenFondo}}" alt="{{titulo}}">
+            </div>
+            <div class="card-cuerpo">
+                <h3 class="cambioColor">{{titulo}}</h3>
+                <p>{{descripcion}}</p>
+            </div>
+            <div class="card-links">
+                <a href="{{demo}}" target="_blank">Demo <i class="fa-solid fa-arrow-up-right-from-square" style="color: #fff;"></i></a>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</section>

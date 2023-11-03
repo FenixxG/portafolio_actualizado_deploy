@@ -9,6 +9,7 @@
   <link rel="shortcut icon" href="./Imagenes/favicon.ico" type="image/x-icon">
   <script src="https://kit.fontawesome.com/d095bcb77b.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
   <header>
     <a href="#">
@@ -21,6 +22,9 @@
         </li>
         <li>
           <a href="#acerca">Acerca de</a>
+        </li>
+        <li>
+          <a href="#proyectos">Proyectos</a>
         </li>
         <li>
           <a href="#contacto">Contacto</a>
@@ -46,9 +50,13 @@
           estudiante de ingeniería en ciencias de la computación en la Universidad Católica de Honduras, me llama mucho
           la atención el desarrollo de portales web en especial la creación de interfaces web, poseo conocimientos en
           HTML y CSS, lo que es JavaScript manejo lo basico. Siempre busco expandir mis conocimientos en nuevas
-          tecnologias y herramientas.</p>
+          tecnologias y herramientas, por lo cual actualmente estoy aprendiendo Vite, uso de preprocesadores de CSS como
+          lo es LESS y plantilleros como Handlebars.</p>
       </div>
     </section>
+
+    <!--SECCION DE PROYECTOS-->
+    {{> proyectos}}
 
     <!--SECCION DE CONTACTO-->
     <section class="contacto" id="contacto">
@@ -68,4 +76,5 @@
     <small>Copyright © 2023 - Todos los Derechos Reservados</small>
   </footer>
 </body>
+
 </html>
